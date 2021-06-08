@@ -1,15 +1,16 @@
-package contact_project;
+package contact_project.model;
 
 import java.time.LocalDateTime;
 
-public class Besuch {
+public class Visit {
 
     private final LocalDateTime StartDate;
     private final LocalDateTime EndDate;
     private final int PersonId;
     private final int LocationId;
 
-    public Besuch(LocalDateTime startDate, LocalDateTime endDate, int personId, int locationId)
+    //constructor for creating new visit object
+    public Visit(LocalDateTime startDate, LocalDateTime endDate, int personId, int locationId)
     {
         StartDate = startDate;
         EndDate = endDate;
@@ -17,13 +18,12 @@ public class Besuch {
         LocationId = locationId;
     }
 
+    //getter methods
     public LocalDateTime getStartDate() {
         return StartDate;
     }
 
-    public LocalDateTime getEndDate() {
-        return EndDate;
-    }
+    public LocalDateTime getEndDate() { return EndDate; }
 
     public int getPersonId() {
         return PersonId;

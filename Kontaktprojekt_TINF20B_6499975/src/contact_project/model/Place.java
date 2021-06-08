@@ -1,15 +1,15 @@
-package contact_project;
+package contact_project.model;
 
-public class Ort {
+public class Place {
 
     private final int Id;
     private final String Name;
-    private final String Location;
+    private final String InOut;
 
-    public Ort(int id, String name, String loc){
+    public Place(int id, String name, String inOut){
         Id = id;
         Name = name;
-        Location = loc;
+        InOut = inOut;
     }
 
     public int getId() {
@@ -20,7 +20,7 @@ public class Ort {
         return Name;
     }
 
-    public String getLocation() {
-        return Location;
+    public String getInOut() {
+        return InOut;
     }
 }
